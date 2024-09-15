@@ -21,3 +21,14 @@
 2. Another input to do this is cars.loc[0]/cars.iloc[0], but why would you do that?
 #### c.) How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
 1. For this one, let's use "cars.iloc[[23],[0,2]]". The input "cars.iloc[23,2]" would suffice for this question, but "cars.iloc[[23],[0,2]]" includes the names "Model", and "cyl" making it look more refined.
+2. The panda function ".iloc" locates the row number(s) in the first input, and the second input(s) correspond to what column(s) it would refer to.
+#### d.) Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
+1. Let's use cars.loc[[1,18,28],['Model','cyl','gear']] for this one as .iloc no longer matters to me.
+2. The panda function ".iloc" also locates the row number(s) in the first input, but the second input(s) uses names as reference making it easier than .iloc.
+
+## Learnings
+1. Panda function is very useful in locating values, though a bit tricky to master at first.
+2. Some brackets also change how the output is shown, for example: .iloc / .loc with one less square bracket will not show the names of the columns or not work at all.
+3. As learned in the last module: slicing, subsetting and indexing (which i didn't use in my solutions) are all very useful and satisfying to do in my opinion.
+4. Dinosaur emoji 🦖
+
